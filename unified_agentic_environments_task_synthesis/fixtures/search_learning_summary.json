@@ -1,0 +1,138 @@
+{
+  "accepted_record": "CHAPTER_24_SEARCH_NATIVE_ACTOR_ANSWER_LEARNING",
+  "arms": {
+    "common-cold": {
+      "actual_retrieval_calls": 48,
+      "all_questions": 24,
+      "correct": 5,
+      "sampled_tokens": 681
+    },
+    "trained": {
+      "actual_retrieval_calls": 48,
+      "all_questions": 24,
+      "correct": 6,
+      "sampled_tokens": 677
+    }
+  },
+  "checkpoint": {
+    "directory": "runs/search-answer-learning/trained-hf",
+    "files_sha256": {
+      "chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+      "config.json": "c14d09149e5924c1333a146b9f3226e83d36f1dd83753c7770a11875ab9830cc",
+      "generation_config.json": "8c7e4e472618ad21e1f966b07f9761490a6d53092ab1b4e512b179462e8db246",
+      "model.safetensors": "3743540328039a00a023aa777f96face58185a5fd1dc89442e6091919b2c05d7",
+      "tokenizer.json": "1a7aabe7a3b44651592a99607bb33066e6965260336be9218cccd53af161491d",
+      "tokenizer_config.json": "d9bf1d78a80bad5eb65b83c2608910e3be00a9d3250c8153a5a393ad1257e1d6"
+    }
+  },
+  "manifest": {
+    "actor": "pinned DataParallelPPOActor constructor, recomputation, update_policy/backward and optimizer step; CPU data transport and chunked float32 scoring; frozen Qwen body and rank-eight full-vocabulary readout",
+    "actor_kl": {
+      "coefficient": 0.001,
+      "type": "low_var_kl"
+    },
+    "actor_loss_normalization": "source masked mean per microbatch, then divide each backward loss by five",
+    "chat_prompt_sha256": "b0c5626e8c49a0d38c7a62cddd245430d8763a507c8764117b01a5efb0bff822",
+    "claim_boundary": "one-seed reduced local actor run, not upstream distributed Search-R1 or private K3 training",
+    "clip_ratio": 0.2,
+    "cold_result_sha256": "79f1b74ba6c40b9ccf4e43b797a5f18ca11d3b1c916b7784fb78934bfa6f6ea7",
+    "common_checkpoint_files_sha256": {
+      "chat_template.jinja": "cd8e9439f0570856fd70470bf8889ebd8b5d1107207f67a5efb46e342330527f",
+      "config.json": "c14d09149e5924c1333a146b9f3226e83d36f1dd83753c7770a11875ab9830cc",
+      "generation_config.json": "8c7e4e472618ad21e1f966b07f9761490a6d53092ab1b4e512b179462e8db246",
+      "model.safetensors": "1934e3a2783e8ce8d75c5f1d01ab90919860e278bfdcd5d94743b9ff894b7206",
+      "tokenizer.json": "3fd169731d2cbde95e10bf356d66d5997fd885dd8dbb6fb4684da3f23b2585d8",
+      "tokenizer_config.json": "d9bf1d78a80bad5eb65b83c2608910e3be00a9d3250c8153a5a393ad1257e1d6"
+    },
+    "development_selection": "no new checkpoint selection after the accepted cold gate",
+    "entropy_coefficient": 0.0,
+    "example_ids": [
+      "dev_3481",
+      "dev_6646"
+    ],
+    "final_generation": {
+      "do_sample": false,
+      "max_new_tokens": 256,
+      "repetition_penalty": 1.0,
+      "temperature": 1.0,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    "final_rule": "freeze the 12-step candidate before either final arm; all 24 tasks in both arms; no final-output selection",
+    "final_task_ids": [
+      "dev_5315",
+      "dev_7312",
+      "dev_5233",
+      "dev_4623",
+      "dev_6955",
+      "dev_2512",
+      "dev_6230",
+      "dev_3508",
+      "dev_4234",
+      "dev_630",
+      "dev_1118",
+      "dev_3591",
+      "dev_7056",
+      "dev_1715",
+      "dev_2754",
+      "dev_2672",
+      "dev_5828",
+      "dev_3104",
+      "dev_5887",
+      "dev_6536",
+      "dev_3014",
+      "dev_1344",
+      "dev_5370",
+      "dev_1815"
+    ],
+    "grad_clip": 1.0,
+    "microbatch": 1,
+    "minibatch": 5,
+    "optimizer": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "lr": 0.0003,
+      "name": "AdamW",
+      "weight_decay": 0.01
+    },
+    "retriever_corpus_sha256": "796032854ee7b41adeba8dcf60f68a86bad127382c034c0914e679c427372375",
+    "reward": "released qa_em on one fixed scorer-only format example plus actor spans; terminal answer reward, no support-title reward",
+    "rollouts_per_group": 5,
+    "seed": 20261006,
+    "trace_rule": "lowest final row index with at least two baseline retrieval calls, then one, then row zero; correctness is not used",
+    "training_generation": {
+      "do_sample": true,
+      "max_new_tokens": 256,
+      "repetition_penalty": 1.0,
+      "temperature": 0.8,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    "training_groups": 12,
+    "training_questions": [
+      "dev_5492",
+      "dev_3481",
+      "dev_6646",
+      "dev_1551",
+      "dev_1968",
+      "dev_5826",
+      "dev_2753",
+      "dev_134",
+      "dev_4655",
+      "dev_5815",
+      "dev_1859",
+      "dev_3245"
+    ],
+    "training_selection": "first 12 questions in the frozen training order; two six-question loader batches"
+  },
+  "paired": {
+    "cold_only": 0,
+    "trained_only": 1
+  },
+  "record_sha256": "a22bd5bd43f3fc8d1c1f648b6bd7699813176b6ee45d072820da5e391dd597a9",
+  "semantic_support": "unavailable; the separate correct-plus-both-support-titles count is a retrieval diagnostic, not entailment",
+  "source_commit": "598e61bd1d36895726d28a8d06b3a15bed19f5d3",
+  "updates": 12
+}

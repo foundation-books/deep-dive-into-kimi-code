@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-26",
+  "public_sources": [
+    {
+      "id": "kimi-k3-report-v2",
+      "title": "Kimi K3: Open Frontier Intelligence",
+      "revision": "arXiv:2607.24653v2",
+      "url": "https://arxiv.org/pdf/2607.24653v2",
+      "anchor": "Section 4.2.2 and Figure 9: concept graph, retrieval, and task-type synthesis",
+      "status": "versioned report inspected; configured local checkout unavailable"
+    },
+    {
+      "id": "sklearn-balanced-1.9.1",
+      "title": "scikit-learn balanced_accuracy_score",
+      "revision": "1.9.1 documentation",
+      "url": "https://scikit-learn.org/1.9/modules/generated/sklearn.metrics.balanced_accuracy_score.html",
+      "anchor": "unadjusted balanced accuracy is the mean class recall",
+      "status": "versioned public documentation inspected"
+    },
+    {
+      "id": "sklearn-accuracy-1.9.1",
+      "title": "scikit-learn accuracy_score",
+      "revision": "1.9.1 documentation",
+      "url": "https://scikit-learn.org/1.9/modules/generated/sklearn.metrics.accuracy_score.html",
+      "anchor": "normalized single-label accuracy is the fraction correct",
+      "status": "versioned public documentation inspected"
+    },
+    {
+      "id": "appworld-guide-42b5bcf",
+      "title": "AppWorld Developing New Task Generators",
+      "revision": "42b5bcf3cd334fee33f0c37c02070a9f5807add5",
+      "url": "https://github.com/StonyBrookNLP/appworld/blob/42b5bcf3cd334fee33f0c37c02070a9f5807add5/guides/developing_new_task_generators.md",
+      "anchor": "address-update tutorial: _setup, public-data solution, private-data evaluation",
+      "status": "pinned guide inspected; protected upstream generator assets not run"
+    },
+    {
+      "id": "agentinstruct-v1",
+      "title": "AgentInstruct: Toward Generative Teaching with Agentic Flows",
+      "revision": "arXiv:2407.03502v1",
+      "url": "https://arxiv.org/html/2407.03502v1",
+      "anchor": "Section 2: content transformation, task taxonomy, and instruction creation",
+      "status": "versioned paper inspected; generator not run"
+    },
+    {
+      "id": "webshaper-v1",
+      "title": "WebShaper: Agentically Data Synthesizing via Information-Seeking Formalization",
+      "revision": "arXiv:2507.15061v1",
+      "url": "https://arxiv.org/pdf/2507.15061v1",
+      "anchor": "Section 3.2: information dependencies and shortcut control",
+      "status": "versioned paper inspected; generator not run"
+    }
+  ],
+  "packet_sources": [
+    {
+      "id": "metric-definitions",
+      "file": "fixtures/metric_definitions.md",
+      "sha256": "6b32b165277c86e3b9d7b96e997374adcdce7e5f7012b2a7139676206a5e183c",
+      "supports": ["balanced-accuracy", "ordinary-accuracy"],
+      "origin": "book-authored excerpt of versioned public documentation"
+    },
+    {
+      "id": "methodology",
+      "file": "fixtures/methodology.md",
+      "sha256": "e9def8ddef7463b6e5ee8337b68e84c6fd41d6da31455360ee00e0b9c7f32ead",
+      "supports": ["required-metric", "valid-input-domain"],
+      "origin": "book-authored task specification"
+    },
+    {
+      "id": "counts",
+      "file": "fixtures/counts.csv",
+      "sha256": "d86af6709747fab032c26edf4cae2d1087be4af31cf75370499249e71c7f1a85",
+      "supports": ["classifier-counts"],
+      "origin": "book-authored fictional numerical fixture"
+    },
+    {
+      "id": "buggy-program",
+      "file": "fixtures/analysis.py",
+      "sha256": "3dab22aa5a978ac49bc6dca3be2460323ab12977101ec807d19a1104134e9ebd",
+      "supports": ["repair-target"],
+      "origin": "book-authored defective program"
+    }
+  ]
+}

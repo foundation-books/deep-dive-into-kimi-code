@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "provenance": {
+    "record_id": "CHAPTER_03_MOBA_REFERENCE_CHECKS",
+    "evidence_class": "reproduced",
+    "claim_boundary": "These fixed CPU checks support toy MoBA semantics, isolation, route conservation, and analytical counts only. They do not reproduce training, a GPU kernel, or production performance.",
+    "original_record_sha256": "ea4dea2ae3d7927dba5d4b2605b48d68c27674277d7fd8adf9e4ad57c1a27e85"
+  },
+  "results": {
+    "RESULT_MOBA_BACKWARD_ORACLE": {
+      "finite_difference_step": 1e-05,
+      "max_abs_error": 3.552713678800501e-10,
+      "q_k_v_max_abs_errors": [
+        1.7763568394002505e-10,
+        3.552713678800501e-10,
+        1.7763568394002505e-10
+      ],
+      "status": "pass"
+    },
+    "RESULT_MOBA_BATCH_ISOLATION": {
+      "max_abs_error": 0.0,
+      "status": "pass"
+    },
+    "RESULT_MOBA_CAUSALITY": {
+      "last_compared_query": 5,
+      "max_abs_prefix_error": 0.0,
+      "status": "pass"
+    },
+    "RESULT_MOBA_COST_LEDGER": {
+      "performance_claim_supported": false,
+      "status": "pass",
+      "values": {
+        "dense_causal_query_key_pairs": 110,
+        "gate_dot_product_multiply_adds": 400,
+        "gate_query_block_pairs": 100,
+        "historical_route_records": 28,
+        "key_value_storage_scalars": 160,
+        "mandatory_current_assignments": 20,
+        "moba_query_key_pairs": 86,
+        "realized_causal_density": 0.7818181818181819,
+        "realized_causal_sparsity": 0.21818181818181814,
+        "representative_storage_scalars": 40,
+        "selected_attention_dot_product_multiply_adds": 344
+      }
+    },
+    "RESULT_MOBA_FORWARD_ORACLE": {
+      "final_query_outputs": [
+        [
+          0.2361557650859006,
+          0.4723115301718012,
+          0.7084672952577018,
+          0.9446230603436024
+        ],
+        [
+          0.6030488996805594,
+          1.2060977993611188,
+          1.8091466990416782,
+          2.4121955987222377
+        ]
+      ],
+      "max_abs_error": 4.440892098500626e-16,
+      "output_shape": [
+        10,
+        2,
+        4
+      ],
+      "status": "pass",
+      "tolerance": 1e-12
+    },
+    "RESULT_MOBA_FULL_LIMIT": {
+      "max_abs_error": 0.0,
+      "status": "pass",
+      "total_block_budget": 5
+    },
+    "RESULT_MOBA_ONLINE_MERGE": {
+      "abs_error": 0.0,
+      "expected": 3.857142857142857,
+      "left_denominator": 1.5,
+      "left_maximum": 0.6931471805599453,
+      "merged_denominator_in_global_scale": 1.75,
+      "output": 3.857142857142857,
+      "right_denominator": 1.0,
+      "right_maximum": 1.3862943611198906,
+      "status": "pass"
+    },
+    "RESULT_MOBA_PARTIAL_BLOCK": {
+      "block_sizes": [
+        4,
+        4,
+        1
+      ],
+      "blocks": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4,
+          5,
+          6,
+          7
+        ],
+        [
+          8
+        ]
+      ],
+      "last_representative_max_abs_error": 0.0,
+      "status": "pass"
+    },
+    "RESULT_MOBA_ROUTE_CONSERVATION": {
+      "historical_route_records": 28,
+      "load_sum": 28,
+      "status": "pass",
+      "unique_route_identities": 28
+    },
+    "RESULT_MOBA_ROUTE_LOAD": {
+      "historical_block_loads": [
+        14,
+        7,
+        5,
+        2,
+        0
+      ],
+      "maximum_to_mean_load_ratio": 2.5,
+      "status": "pass"
+    }
+  }
+}

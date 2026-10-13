@@ -1,0 +1,24 @@
+{
+  "visualCalls": [
+    {
+      "state": "D2 default desktop",
+      "sha256": "ba23c243eba5999dd444dbd79e6dd497938d63722e6149f955dcacb43b11d39e",
+      "byteLength": 76920,
+      "width": 960,
+      "height": 900
+    },
+    {
+      "state": "D3 default desktop",
+      "sha256": "6e7733aca1b5ceec6968cbfdcc4d5e75956ae306d7ff2dd9f1b715cd8df1fe92",
+      "byteLength": 78254,
+      "width": 960,
+      "height": 900
+    }
+  ],
+  "codingFeedback": [
+    "The chart legend is missing; restore it.",
+    "The chart legend is visible; retain this layout."
+  ],
+  "sameStateViewportChangesPixels": true,
+  "note": "Stubbed request boundary only; no model interpretation or upstream execution."
+}

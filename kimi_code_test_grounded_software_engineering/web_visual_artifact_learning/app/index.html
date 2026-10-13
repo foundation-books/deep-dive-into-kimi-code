@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Field Notes | Measurement Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <div><span class="eyebrow">FIELD NOTES / EXPERIMENT 001</span><h1>Measurement dashboard</h1>
+        <p>Explore a small, fixed instrument sample.</p></div>
+      <div class="status">6 recorded observations</div>
+    </header>
+    <section class="workspace" aria-label="Dashboard">
+      <aside class="controls card">
+        <div class="section-heading"><span class="step">01</span><h2>Filters</h2></div>
+        <label for="group">Instrument group</label>
+        <select id="group"><option value="all">All groups</option><option value="A">Group A</option><option value="B">Group B</option></select>
+        <div class="range-label"><label for="minimum">Inclusive value range</label><span>units</span></div>
+        <div class="range-controls"><input id="minimum" type="number" value="0" min="0" max="10" aria-label="Minimum value"><span>to</span><input id="maximum" type="number" value="10" min="0" max="10" aria-label="Maximum value"></div>
+        <button id="export" type="button">Export selected CSV <span aria-hidden="true">↗</span></button>
+        <p class="hint">The chart, summary, table and export use the selected rows.</p>
+      </aside>
+      <div class="results">
+        <div class="stats"><article class="stat card"><span>Selected rows</span><strong id="count">6</strong><small>matching observations</small></article><article class="stat card"><span>Mean value</span><strong id="mean">4.5</strong><small>measurement units</small></article></div>
+        <section class="chart card" aria-labelledby="chart-title"><div class="chart-head"><div><span class="eyebrow">DISTRIBUTION</span><h2 id="chart-title">Selected measurements</h2></div><div id="legend" class="legend"><i aria-hidden="true"></i> Measurement</div></div><div id="bars" class="bars" role="img" aria-label="Bar chart of selected measurements"></div><p id="empty-chart" class="empty" hidden>No measurements match these filters.</p></section>
+        <section class="table-card card" aria-labelledby="table-title"><div class="table-head"><h2 id="table-title">Observation log</h2><span id="selection-label">All groups · 0–10</span></div><table><thead><tr><th scope="col">Row ID</th><th scope="col">Group</th><th scope="col" class="numeric">Measurement</th></tr></thead><tbody id="rows"></tbody></table><p id="empty-table" class="empty" hidden>No rows to display.</p></section>
+      </div>
+    </section>
+    <footer>Teaching data · six invented observations · no external service</footer>
+  </main>
+  <script src="candidate.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

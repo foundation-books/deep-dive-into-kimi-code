@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "interludes": [],
+  "chapters": [
+    {
+      "printed_chapter": 1,
+      "slug": "transformer_foundations",
+      "title": "Foundations: The Transformer That Kimi Builds On",
+      "directory": "transformer_foundations",
+      "reference": "reference.py",
+      "test": "test_transformer_foundations_reference.py"
+    },
+    {
+      "printed_chapter": 2,
+      "slug": "computational_anatomy",
+      "title": "Computational Anatomy of Kimi K3",
+      "directory": "computational_anatomy",
+      "reference": "reference.py",
+      "test": "test_computational_anatomy_reference.py"
+    },
+    {
+      "printed_chapter": 3,
+      "slug": "sparse_moe",
+      "title": "Sparse MoE from K2 to K3",
+      "directory": "sparse_moe",
+      "reference": "reference.py",
+      "test": "test_sparse_moe_reference.py"
+    },
+    {
+      "printed_chapter": 4,
+      "slug": "kda",
+      "title": "Kimi Delta Attention",
+      "directory": "kda",
+      "reference": "reference.py",
+      "test": "test_kda_reference.py"
+    },
+    {
+      "printed_chapter": 5,
+      "slug": "kimi_linear",
+      "title": "Hybrid Attention in Kimi K3",
+      "directory": "kimi_linear",
+      "reference": "reference.py",
+      "test": "test_kimi_linear_reference.py"
+    },
+    {
+      "printed_chapter": 6,
+      "slug": "gated_mla",
+      "title": "Gated Multi-Head Latent Attention",
+      "directory": "gated_mla",
+      "reference": "reference.py",
+      "test": "test_gated_mla_reference.py"
+    },
+    {
+      "printed_chapter": 7,
+      "slug": "attention_residuals",
+      "title": "Attention Residuals",
+      "directory": "attention_residuals",
+      "reference": "reference.py",
+      "test": "test_attention_residuals_reference.py"
+    },
+    {
+      "printed_chapter": 8,
+      "slug": "stable_latent_moe",
+      "title": "Stable LatentMoE",
+      "directory": "stable_latent_moe",
+      "reference": "reference.py",
+      "test": "test_stable_latent_moe_reference.py"
+    },
+    {
+      "printed_chapter": 9,
+      "slug": "moonvit_native_multimodality",
+      "title": "MoonViT and Native Multimodality",
+      "directory": "moonvit_native_multimodality",
+      "reference": "reference.py",
+      "test": "test_moonvit_native_multimodality_reference.py"
+    },
+    {
+      "printed_chapter": 10,
+      "slug": "integrated_k3_transformer",
+      "title": "The Integrated K3 Transformer",
+      "directory": "integrated_k3_transformer",
+      "reference": "reference.py",
+      "test": "test_integrated_k3_transformer_reference.py"
+    },
+    {
+      "printed_chapter": 11,
+      "slug": "moba",
+      "title": "Advanced Reading: MoBA and Learned Block-Sparse Attention",
+      "directory": "moba",
+      "reference": "reference.py",
+      "test": "test_moba_reference.py"
+    },
+    {
+      "printed_chapter": 12,
+      "slug": "moonlight_muon",
+      "title": "Scaling Muon for LLM Training",
+      "directory": "moonlight_muon",
+      "reference": "reference.py",
+      "test": "test_moonlight_muon_reference.py"
+    },
+    {
+      "printed_chapter": 13,
+      "slug": "muonclip_training_stability",
+      "title": "MuonClip and Training Stability",
+      "directory": "muonclip_training_stability",
+      "reference": "reference.py",
+      "test": "test_muonclip_training_stability_reference.py"
+    },
+    {
+      "printed_chapter": 14,
+      "slug": "stable_sparse_pretraining",
+      "title": "Stable Sparse Pretraining",
+      "directory": "stable_sparse_pretraining",
+      "reference": "reference.py",
+      "test": "test_stable_sparse_pretraining_reference.py"
+    },
+    {
+      "printed_chapter": 15,
+      "slug": "long_context_pretraining",
+      "title": "Long-Context Pretraining",
+      "directory": "long_context_pretraining",
+      "reference": "reference.py",
+      "test": "test_long_context_pretraining_reference.py"
+    },
+    {
+      "printed_chapter": 16,
+      "slug": "native_multimodal_pretraining",
+      "title": "Native Multimodal Pretraining",
+      "directory": "native_multimodal_pretraining",
+      "reference": "reference.py",
+      "test": "test_native_multimodal_pretraining_reference.py"
+    },
+    {
+      "printed_chapter": 17,
+      "slug": "k3_post_training_data_sft",
+      "title": "Supervised Cold Start for Agentic RL",
+      "directory": "k3_post_training_data_sft",
+      "reference": "reference.py",
+      "test": "test_k3_post_training_data_sft_reference.py"
+    },
+    {
+      "printed_chapter": 18,
+      "slug": "rl_foundations",
+      "title": "Reinforcement Learning Foundations: From Token Prediction to Outcome-Driven Learning",
+      "directory": "rl_foundations",
+      "reference": "reference.py",
+      "test": "test_rl_foundations_reference.py"
+    },
+    {
+      "printed_chapter": 19,
+      "slug": "long_cot_rl_policy_optimization",
+      "title": "Long-CoT Reinforcement Learning and Localized Policy Optimization",
+      "directory": "long_cot_rl_policy_optimization",
+      "reference": "reference.py",
+      "test": "test_long_cot_rl_policy_optimization_reference.py"
+    },
+    {
+      "printed_chapter": 20,
+      "slug": "sampling_curricula_partial_rollouts",
+      "title": "Sampling, Curricula, and Partial Rollouts",
+      "directory": "sampling_curricula_partial_rollouts",
+      "reference": "reference.py",
+      "test": "test_sampling_curricula_partial_rollouts_reference.py"
+    },
+    {
+      "printed_chapter": 21,
+      "slug": "multi_domain_reasoning_effort_rl",
+      "title": "Multi-Domain and Reasoning-Effort Reinforcement Learning",
+      "directory": "multi_domain_reasoning_effort_rl",
+      "reference": "reference.py",
+      "test": "test_multi_domain_reasoning_effort_rl_reference.py"
+    },
+    {
+      "printed_chapter": 22,
+      "slug": "rewards_verifiers_agentic_grm",
+      "title": "Rewards, Verifiers, and Agentic Generative Reward Models",
+      "directory": "rewards_verifiers_agentic_grm",
+      "reference": "reference.py",
+      "test": "test_rewards_verifiers_agentic_grm_reference.py"
+    },
+    {
+      "printed_chapter": 23,
+      "slug": "capability_consolidation_deployment_aware_post_training",
+      "title": "Capability Consolidation and Deployment-Aware Post-Training",
+      "directory": "capability_consolidation_deployment_aware_post_training",
+      "reference": "reference.py",
+      "test": "test_capability_consolidation_deployment_aware_post_training_reference.py"
+    },
+    {
+      "printed_chapter": 24,
+      "slug": "unified_agentic_environments_task_synthesis",
+      "title": "Unified Agentic Environments and Task Synthesis",
+      "directory": "unified_agentic_environments_task_synthesis",
+      "reference": "reference.py",
+      "test": "test_unified_agentic_environments_task_synthesis_reference.py"
+    },
+    {
+      "printed_chapter": 25,
+      "slug": "visual_multimodal_agent_learning",
+      "title": "Visual and Multimodal Agent Learning",
+      "directory": "visual_multimodal_agent_learning",
+      "reference": "reference.py",
+      "test": "test_visual_multimodal_agent_learning_reference.py"
+    },
+    {
+      "printed_chapter": 26,
+      "slug": "parallel_agent_reinforcement_learning_agent_swarms",
+      "title": "Parallel-Agent Reinforcement Learning and Agent Swarms",
+      "directory": "parallel_agent_reinforcement_learning_agent_swarms",
+      "reference": "reference.py",
+      "test": "test_parallel_agent_reinforcement_learning_agent_swarms_reference.py"
+    },
+    {
+      "printed_chapter": 27,
+      "slug": "structured_generation_xtml_walle",
+      "title": "Structured Generation, XTML, and Walle",
+      "directory": "structured_generation_xtml_walle",
+      "reference": "reference.py",
+      "test": "test_structured_generation_xtml_walle_reference.py"
+    },
+    {
+      "printed_chapter": 28,
+      "slug": "reasoning_state_tool_execution",
+      "title": "Tool Execution, Agent State, and Durable Context",
+      "directory": "reasoning_state_tool_execution",
+      "reference": "reference.py",
+      "test": "test_reasoning_state_tool_execution_reference.py"
+    },
+    {
+      "printed_chapter": 29,
+      "slug": "kimi_code_test_grounded_software_engineering",
+      "title": "Coding Agents: Training and Execution",
+      "directory": "kimi_code_test_grounded_software_engineering",
+      "reference": "reference.py",
+      "test": "test_kimi_code_test_grounded_software_engineering_reference.py"
+    },
+    {
+      "printed_chapter": 30,
+      "slug": "kernel_optimization_learning",
+      "title": "Case Study: Kernel Optimization as a K3 Reinforcement-Learning Domain",
+      "directory": "kernel_optimization_learning",
+      "reference": "reference.py",
+      "test": "test_kernel_optimization_learning_reference.py"
+    },
+    {
+      "printed_chapter": 31,
+      "slug": "evaluating_reasoning_agentic_systems",
+      "title": "Agent Evaluation, Correctness, and Safety",
+      "directory": "evaluating_reasoning_agentic_systems",
+      "reference": "reference.py",
+      "test": "test_evaluating_reasoning_agentic_systems_reference.py"
+    },
+    {
+      "printed_chapter": 32,
+      "slug": "gpu_kernel_foundations",
+      "title": "From Basic CUDA to Kimi Kernels",
+      "directory": "gpu_kernel_foundations",
+      "reference": "reference.py",
+      "test": "test_gpu_kernel_foundations_reference.py"
+    },
+    {
+      "printed_chapter": 33,
+      "slug": "llm_parallelism_foundations",
+      "title": "LLM Parallelism Foundations: From One GPU to a Distributed Model",
+      "directory": "llm_parallelism_foundations",
+      "reference": "reference.py",
+      "test": "test_llm_parallelism_foundations_reference.py"
+    },
+    {
+      "printed_chapter": 34,
+      "slug": "flashkda_kda_kernels",
+      "title": "FlashKDA and KDA Kernels",
+      "directory": "flashkda_kda_kernels",
+      "reference": "reference.py",
+      "test": "test_flashkda_kda_kernels_reference.py"
+    },
+    {
+      "printed_chapter": 35,
+      "slug": "hybrid_attention_depth_mixing_kernels",
+      "title": "Hybrid-Attention and Depth-Mixing Kernels",
+      "directory": "hybrid_attention_depth_mixing_kernels",
+      "reference": "reference.py",
+      "test": "test_hybrid_attention_depth_mixing_kernels_reference.py"
+    },
+    {
+      "printed_chapter": 36,
+      "slug": "moe_kernels_routed_computation",
+      "title": "MoE Kernels and Routed Computation",
+      "directory": "moe_kernels_routed_computation",
+      "reference": "reference.py",
+      "test": "test_moe_kernels_routed_computation_reference.py"
+    },
+    {
+      "printed_chapter": 37,
+      "slug": "moonep",
+      "title": "MoonEP and Perfectly Balanced Expert Parallelism",
+      "directory": "moonep",
+      "reference": "reference.py",
+      "test": "test_moonep_reference.py"
+    },
+    {
+      "printed_chapter": 38,
+      "slug": "distributed_execution_k3_class_models",
+      "title": "Distributed Execution for K3-Class Models",
+      "directory": "distributed_execution_k3_class_models",
+      "reference": "reference.py",
+      "test": "test_distributed_execution_k3_class_models_reference.py"
+    },
+    {
+      "printed_chapter": 39,
+      "slug": "memory_efficient_training",
+      "title": "Memory-Efficient Training",
+      "directory": "memory_efficient_training",
+      "reference": "reference.py",
+      "test": "test_memory_efficient_training_reference.py"
+    },
+    {
+      "printed_chapter": 40,
+      "slug": "multimodal_encoder_input_pipeline_optimization",
+      "title": "Multimodal Encoder and Input-Pipeline Optimization",
+      "directory": "multimodal_encoder_input_pipeline_optimization",
+      "reference": "reference.py",
+      "test": "test_multimodal_encoder_input_pipeline_optimization_reference.py"
+    },
+    {
+      "printed_chapter": 41,
+      "slug": "checkpoint_engine_online_weight_publication",
+      "title": "Checkpoint Engine and Online Weight Publication",
+      "directory": "checkpoint_engine_online_weight_publication",
+      "reference": "reference.py",
+      "test": "test_checkpoint_engine_online_weight_publication_reference.py"
+    },
+    {
+      "printed_chapter": 42,
+      "slug": "million_token_agentic_rl_infrastructure",
+      "title": "Million-Token Agentic-RL Infrastructure",
+      "directory": "million_token_agentic_rl_infrastructure",
+      "reference": "reference.py",
+      "test": "test_million_token_agentic_rl_infrastructure_reference.py"
+    },
+    {
+      "printed_chapter": 43,
+      "slug": "mooncake_disaggregated_serving",
+      "title": "Mooncake and Disaggregated Serving",
+      "directory": "mooncake_disaggregated_serving",
+      "reference": "reference.py",
+      "test": "test_mooncake_disaggregated_serving_reference.py"
+    },
+    {
+      "printed_chapter": 44,
+      "slug": "kda_aware_prefix_caching",
+      "title": "KDA-Aware Prefix Caching and Long-Context Scheduling",
+      "directory": "kda_aware_prefix_caching",
+      "reference": "reference.py",
+      "test": "test_kda_aware_prefix_caching_reference.py"
+    },
+    {
+      "printed_chapter": 45,
+      "slug": "fleet_scheduling_admission_failure_recovery",
+      "title": "Fleet Scheduling, Admission, and Failure Recovery",
+      "directory": "fleet_scheduling_admission_failure_recovery",
+      "reference": "reference.py",
+      "test": "test_fleet_scheduling_admission_failure_recovery_reference.py"
+    },
+    {
+      "printed_chapter": 46,
+      "slug": "low_precision_execution_speculative_decoding",
+      "title": "Low-Precision Execution and Speculative Decoding",
+      "directory": "low_precision_execution_speculative_decoding",
+      "reference": "reference.py",
+      "test": "test_low_precision_execution_speculative_decoding_reference.py"
+    },
+    {
+      "printed_chapter": 25,
+      "slug": "coding_agents_kimi_dev",
+      "title": "Coding-Agent Training",
+      "directory": "coding_agents_kimi_dev",
+      "reference": "reference.py",
+      "test": "test_coding_agents_kimi_dev_reference.py",
+      "status": "historical"
+    },
+    {
+      "printed_chapter": 29,
+      "slug": "durable_agent_loops_context_management",
+      "title": "Durable Agent Loops and Context Management",
+      "directory": "durable_agent_loops_context_management",
+      "reference": "reference.py",
+      "test": "test_durable_agent_loops_context_management_reference.py",
+      "status": "historical"
+    },
+    {
+      "printed_chapter": 32,
+      "slug": "agent_correctness_failure_safety_frontiers",
+      "title": "Agent Correctness, Failure, Safety, and Frontiers",
+      "directory": "agent_correctness_failure_safety_frontiers",
+      "reference": "reference.py",
+      "test": "test_agent_correctness_failure_safety_frontiers_reference.py",
+      "status": "historical"
+    },
+    {
+      "printed_chapter": 45,
+      "slug": "system_correctness_performance",
+      "title": "System Correctness and Performance",
+      "directory": "system_correctness_performance",
+      "reference": "reference.py",
+      "test": "test_system_correctness_performance_reference.py",
+      "status": "historical"
+    },
+    {
+      "printed_chapter": 46,
+      "slug": "open_systems_problems",
+      "title": "Open Systems Problems",
+      "directory": "open_systems_problems",
+      "reference": "reference.py",
+      "test": "test_open_systems_problems_reference.py",
+      "status": "historical"
+    }
+  ]
+}

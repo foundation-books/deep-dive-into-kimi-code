@@ -1,0 +1,13 @@
+{
+  "id": "visual-chart-detail-001",
+  "source": "chart-source.png",
+  "source_dimensions": [320, 160],
+  "source_crop_xyxy": [208, 16, 288, 56],
+  "preview_dimensions": [80, 40],
+  "preview_crop_xyxy": [52, 4, 72, 14],
+  "output_dimensions": [80, 40],
+  "sampling": "preview samples the top-left pixel of each 4x4 source block; enlargement uses nearest neighbour",
+  "source_detail": "chart-source-detail.png",
+  "preview_detail": "chart-preview-enlarged.png",
+  "purpose": "Show a source-detail difference without claiming a model-accuracy effect."
+}

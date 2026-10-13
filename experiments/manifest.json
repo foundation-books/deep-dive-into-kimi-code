@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "edition_source_commit": "97c1e782bdf7fdd881f6e91d1a748c62d0a181f0",
+  "scope": "Portable adaptations of selected experiment algorithms and supplied recorded data.",
+  "archive_locator_note": "Archive keys identify source artifacts independently of runtime paths. Machine-specific archive directories use portable artifact labels; original archive hashes are unchanged.",
+  "adaptation": "Algorithm bodies and authored fixtures are retained; author-side source verification, cluster gates and machine identity are excluded. Numeric values and observed outcomes are unchanged. CPU replays do not constitute new hardware runs.",
+  "original_archive_sha256": {
+    "experiments/kda/results/reference_checks.json": "3d2f3d165b2c25499971fcfba8894dd5fa5585899f79f3a6dd9954da28843f21",
+    "experiments/moba/results/reference_checks.json": "ea4dea2ae3d7927dba5d4b2605b48d68c27674277d7fd8adf9e4ad57c1a27e85",
+    "experiments/gated_mla/results/fp32_output_numerics/raw.json": "223105b22fd0f32d25e3a8d7770171bd0ec71cfc501de9b1d76f3a0741d217fe",
+    "experiments/gated_mla/protocols/fp32_output_numerics_original_v2.json": "5e4aeba2ce8b373875dc38751e39dcf47928c8655785ca794118eb60a1ce1cf9",
+    "experiments/gated_mla/results/fp32_output_numerics.json": "1fa690fd2b96ce6ea8fe47b548d0c83b691994b441222976e07fd153e85c7b67",
+    "experiments/gated_mla/results/peak_cache_memory/raw.json": "3944704089ecc75700f4983364f1b79ff85913925f781ad68a27a998fdb8be98",
+    "experiments/gated_mla/protocols/peak_cache_memory_original_v1.json": "35274c1a2f39ad503b488da952c82c91b24a5e4d24133627cb01c9b7f941fb0e",
+    "experiments/gated_mla/results/peak_cache_memory.json": "604e709c51b1d5a3bddaa8f6c9e2bd23790799adc8143b5dcb06cf1cb42e392c",
+    "experiments/kimi_code_test_grounded_software_engineering/results/test_ladder/raw.json": "d41fded8f458864c3d8f20fc0c8cab96e2d2c5a65aea5083e11113cc91fca327",
+    "validation-protocol": "2528c2b6d5e0198ea7c8f93dc4a1231a345a1f45d999c5096545438fc86a4c34",
+    "experiments/kimi_code_test_grounded_software_engineering/results/test_ladder.json": "1b2e3f5d39ea61330e6556356cfef35abf6c44692fcf6f405625e18f0e4c101c",
+    "experiments/kimi_code_test_grounded_software_engineering/results/recovery/raw.json": "cd99bce0af364f9319b151412485c008d5ff85210caec270217348bb99d4c298",
+    "recovery-protocol": "ef77b3b6e6a9de8eedbc00fe523242c255a56b63e136c75d8db879d16d76ab9a",
+    "experiments/kimi_code_test_grounded_software_engineering/results/recovery.json": "2c33737c6c4f1e964aee57cce408a107089e8e4abb5644ff9f95ebc5414a2df7",
+    "experiments/kda/run_reference_checks.py": "299142a9d9332fb6e0da7be890ae04853ac44730069551c97649a56248bcf39a",
+    "experiments/moba/run_reference_checks.py": "5db4e908c0b7db263ae5e26fee8c7c8ed146a4ca41cb1dd48b0047b089a17b67",
+    "experiments/gated_mla/review_fp32_output_numerics.py": "6b6774b50c6b3763aa7f47edb20722b0e6362e9f1160b595eae910bb8a131c53",
+    "experiments/gated_mla/review_peak_cache_memory.py": "af0eb22693527e33527823341a75c52a6d2207b00eb0d60066ab7c9b942881cf",
+    "validation-runner": "1a4edd6e2cb8582269abaa49af03a2c53697bc3ee8ad7b76c177d98555cdcb9e",
+    "validation-fixture": "c41e51807f430595796f9bb67e5156e793852e37e76d0dbb14578d4508d49cc1",
+    "recovery-runner": "445c239e8a8b1283b7378efbd2a9e2162b4035d6a404186363a868e8e22b15b3"
+  },
+  "data_sha256": {
+    "gated_mla_cache.json": "80713935e6551378b30df983767c273bf946b813dc6ad077fe93b1994e39d484",
+    "gated_mla_numerics.json": "fa9ee5ae1a6e68245d0e1fb4f26a320d45ff43b0dffc369aac223901545601f3",
+    "kda.json": "f555c52a05be4c22075019e3cdea6476b9d5616aee42725981c3c1c33a55e77e",
+    "moba.json": "b447ae03e3396a3a54acf290a6a25ccd2fdf9a2fbb218f475fc50c064f5ca900",
+    "recovery.json": "6185706b3e28bbc9ceee45ba1a52c4a52b359f35084f40f46de00d32afcc198f",
+    "validation.json": "ee31f3a3430710a0e0a809ddb3e65083a568061b8f226f158e168388c7c154e2"
+  },
+  "experiments": [
+    {
+      "name": "kda",
+      "chapter": 4,
+      "mode": "CPU correctness and accounting",
+      "data": [
+        "kda.json"
+      ]
+    },
+    {
+      "name": "moba",
+      "chapter": 11,
+      "mode": "CPU correctness and accounting",
+      "data": [
+        "moba.json"
+      ]
+    },
+    {
+      "name": "gated-mla",
+      "chapter": 6,
+      "mode": "CPU analysis of one-H200 recorded numerics and cache measurements",
+      "data": [
+        "gated_mla_numerics.json",
+        "gated_mla_cache.json"
+      ]
+    },
+    {
+      "name": "validation",
+      "chapter": 29,
+      "mode": "Authored CPU test-policy replay; historical wall times retained separately",
+      "data": [
+        "validation.json"
+      ]
+    },
+    {
+      "name": "recovery",
+      "chapter": 29,
+      "mode": "Finite simulation replay; costs are modeled milliseconds",
+      "data": [
+        "recovery.json"
+      ]
+    }
+  ]
+}

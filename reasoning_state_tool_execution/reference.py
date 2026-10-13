@@ -1,0 +1,98 @@
+"""Public facade for the dependency-free Chapter 28 teaching oracle."""
+
+from .checks import all_checks
+from .effects import (
+    EFFECT_CLASSES,
+    idempotency_witness,
+    keyed_insert,
+    recovery_action,
+    unkeyed_increment,
+)
+from .fixture import (
+    ASSISTANT_MESSAGE,
+    CALL_A,
+    CALL_B,
+    ENVIRONMENT,
+    FINAL_MESSAGE,
+    FIXTURE_VERSION,
+    OBSERVATION_A,
+    OBSERVATION_B,
+    REGISTRY_DIGEST,
+    STUDIO_A_FIRST_ORDER,
+    STUDIO_B_FIRST_ORDER,
+    STUDIO_CHECKPOINTS,
+    STUDIO_CRASH_PREFIX,
+    STUDIO_EVENTS,
+)
+from .model import (
+    Attempt,
+    CanonicalCall,
+    Event,
+    ExecutionState,
+    Observation,
+    RegistryEntry,
+    canonical_json,
+    digest,
+)
+from .projection import project_result
+from .runtime import (
+    ExecutionContractError,
+    all_topological_orders,
+    fold_events,
+    preserved_history_errors,
+    replace_event,
+    topological_order,
+    validate_order,
+)
+from .scheduler import (
+    Access,
+    conflict_edges,
+    conflicts,
+    provider_order,
+    schedule_batches,
+)
+
+
+__all__ = [
+    "ASSISTANT_MESSAGE",
+    "CALL_A",
+    "CALL_B",
+    "EFFECT_CLASSES",
+    "ENVIRONMENT",
+    "FINAL_MESSAGE",
+    "FIXTURE_VERSION",
+    "OBSERVATION_A",
+    "OBSERVATION_B",
+    "REGISTRY_DIGEST",
+    "STUDIO_A_FIRST_ORDER",
+    "STUDIO_B_FIRST_ORDER",
+    "STUDIO_CHECKPOINTS",
+    "STUDIO_CRASH_PREFIX",
+    "STUDIO_EVENTS",
+    "Access",
+    "Attempt",
+    "CanonicalCall",
+    "Event",
+    "ExecutionContractError",
+    "ExecutionState",
+    "Observation",
+    "RegistryEntry",
+    "all_checks",
+    "all_topological_orders",
+    "canonical_json",
+    "conflict_edges",
+    "conflicts",
+    "digest",
+    "fold_events",
+    "idempotency_witness",
+    "keyed_insert",
+    "preserved_history_errors",
+    "project_result",
+    "provider_order",
+    "recovery_action",
+    "replace_event",
+    "schedule_batches",
+    "topological_order",
+    "unkeyed_increment",
+    "validate_order",
+]

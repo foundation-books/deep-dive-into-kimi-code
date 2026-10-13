@@ -1,0 +1,47 @@
+{
+  "authority": "book/_metadata/source_basis.json:chapters.visual_multimodal_agent_learning",
+  "checked_on": "2026-09-24",
+  "sources": [
+    {
+      "basis_key": "kimi-k3-visual-agent-learning-2026",
+      "revision": "arXiv:2607.24653v2",
+      "locator": "Section 4.2.3",
+      "scope": "Reported isolated Python visual reasoning with returned image observations."
+    },
+    {
+      "basis_key": "kimi-k3-model-input-boundary-2026-ch23",
+      "revision": "c5d1dd4c428bd1ce8b88c5044f3b6ccde9e3b721",
+      "locator": "kimi_k3_processor.py:KimiK3Processor.__call__, _extract_medias_from_messages; encoding_k3.py:build_chat_segments",
+      "notice": "Kimi-K3 model snapshot license; inspect the pinned file notice before redistribution.",
+      "scope": "Released input interface; not a verified local tensor-preparation run."
+    },
+    {
+      "basis_key": "kimi-k3-tool-comparison-2026-ch25",
+      "revision": "3cb39dfd32e51c3328e2e4b4af21341247d06c43",
+      "locator": "README.md:Evaluation Results and footnotes",
+      "notice": "Official Moonshot AI repository; inspect its pinned LICENSE for reuse.",
+      "scope": "Reported with/without-Python scores, not a training ablation."
+    },
+    {
+      "basis_key": "verl-tool-agent-loop-visual-observation-2026-ch25",
+      "revision": "ea53291385ce764019a2b40733605f21d8317583",
+      "locator": "verl/experimental/agent_loop/tool_agent_loop.py:ToolAgentLoop; verl/experimental/agent_loop/agent_loop.py:AgentLoopOutput.as_dict,AgentLoopManager; verl/trainer/ppo/ray_trainer.py:compute_advantage,RayPPOTrainer.fit",
+      "notice": "Apache-2.0 third-party code",
+      "scope": "Continuous-token rollout mask, batch handoff, and selected trainer advantage consumption; not K3 trainer evidence or a visual-component gradient test."
+    },
+    {
+      "basis_key": "deepeyes-visual-toolbox-source-2026-ch25",
+      "revision": "11d20c6be32b2cf62c914e0c73a06db2f9a7e3a1",
+      "locator": "verl/workers/agent/envs/mm_process_engine/visual_toolbox_v2.py:VisualToolBoxV2",
+      "notice": "Third-party code; inspect the pinned file's license before reuse.",
+      "scope": "Image-source convention comparison only."
+    },
+    {
+      "basis_key": "osworld-kimi-k3-computer-use-code-2026-ch23",
+      "revision": "84aee655c2afb6b77ecf39884432615ba345c031",
+      "locator": "desktop_env/desktop_env.py:DesktopEnv.step,evaluate; mm_agents/kimi/kimi_agent.py:KimiAgent.prepare_messages,predict; mm_agents/kimi/utils.py:parse_kimi_tool_calls_to_action",
+      "notice": "Apache-2.0 third-party code",
+      "scope": "Execution and public Kimi-adapter comparison only."
+    }
+  ]
+}

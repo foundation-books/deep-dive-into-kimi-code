@@ -1,0 +1,66 @@
+{
+  "webGenBench": {
+    "sourceSha256": "358519da832192e407c9fa046f636ba758ca0ce34354b22b024136d7fa80b9b6",
+    "judgments": [
+      "YES",
+      "PARTIAL",
+      "NO",
+      null
+    ],
+    "counts": {
+      "yes": 1,
+      "partial": 1,
+      "no": 1,
+      "missing": 1
+    },
+    "total": 4,
+    "partialCreditPercent": 37.5
+  },
+  "design2codePosition": {
+    "sourceSha256": "94a8f9227a668a0c5761f902ed4e93e51dfd1153c0558c28c2a230e67db7c955",
+    "input": "Chart-title DOM center normalized by capture viewport; matching held fixed",
+    "positionSubformula": {
+      "baseline": 1.0,
+      "layout": 0.95,
+      "capture": 0.5502109662980517
+    },
+    "scope": "Pinned distance helper only; OCR-free matching, CLIP, and full evaluator not run"
+  },
+  "webGenStep": {
+    "sourceSha256": "f863f44be9cb14836b15e1fc200a2c0eb36c2b07aef2441edc4069f00d6933b0",
+    "maskedCoefficients": [
+      [
+        -0.99999950000025,
+        -0.99999950000025,
+        -0.0,
+        -0.0,
+        -0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.99999950000025,
+        0.99999950000025,
+        0.99999950000025,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "equalRewards": [
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "singleton": [
+      [
+        1.9999980000020001
+      ]
+    ],
+    "scope": "Pinned estimator function body with a minimal scalar tensor shim; no Torch, Verl, or trainer run"
+  }
+}

@@ -1,0 +1,68 @@
+"""Public facade for the Chapter 23 dependency-free teaching oracle."""
+
+from .reference_checks import all_checks
+from .reference_core import (
+    DOMAINS,
+    EFFORTS,
+    EVIDENCE_STATUSES,
+    CellCounts,
+    PrecisionFingerprint,
+    QuantizationContract,
+    TeacherRecord,
+    acceptance_mass,
+    clipped_reward,
+    lk_loss,
+    opd_rewards,
+    parity_audit,
+    probability_vector,
+    recurrent_inputs,
+    reverse_kl,
+    route_teacher,
+    studio_quantization_contract,
+    studio_teacher_portfolio,
+    top_k_projection,
+    total_variation,
+    validate_mixture,
+)
+from .reference_opd import (
+    OPDAttemptResult,
+    ScoredOPDToken,
+    TokenUseCounts,
+    commit_opd_attempt,
+    strict_opd_attempt,
+    token_use_counts,
+)
+from .reference_studio import studio_handoff
+
+
+__all__ = [
+    "DOMAINS",
+    "EFFORTS",
+    "EVIDENCE_STATUSES",
+    "CellCounts",
+    "OPDAttemptResult",
+    "PrecisionFingerprint",
+    "QuantizationContract",
+    "ScoredOPDToken",
+    "TeacherRecord",
+    "TokenUseCounts",
+    "acceptance_mass",
+    "all_checks",
+    "clipped_reward",
+    "commit_opd_attempt",
+    "lk_loss",
+    "opd_rewards",
+    "parity_audit",
+    "probability_vector",
+    "recurrent_inputs",
+    "reverse_kl",
+    "route_teacher",
+    "strict_opd_attempt",
+    "studio_handoff",
+    "studio_quantization_contract",
+    "studio_teacher_portfolio",
+    "top_k_projection",
+    "total_variation",
+    "token_use_counts",
+    "validate_mixture",
+]

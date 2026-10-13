@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "production": {
+    "file_lines": 460,
+    "function_lines": 80,
+    "branch_points": 15,
+    "nested_defs": 4
+  },
+  "test": {
+    "file_lines": 600,
+    "function_lines": 100,
+    "branch_points": 16,
+    "nested_defs": 16
+  },
+  "headroom_ratio": 0.9,
+  "duplicate_function_min_lines": 8
+}

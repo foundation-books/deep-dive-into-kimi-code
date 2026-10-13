@@ -1,0 +1,34 @@
+{
+  "retrieved_on": "2026-09-27",
+  "evidence_boundary": "Pinned public source inspected at exact commits. A Bolt.diy aggregator and two extracted source function bodies were executed in bounded local probes; upstream model services, full Design2Code evaluation, PyTorch/Verl training, and K3 episodes were not run. Dashboard and all candidate assets are original teaching code and invented data.",
+  "localEvidence": {
+    "originalFixtureRevision": "d807a3b6 (initial Chapter 29 web artifact evidence commit)",
+    "developmentViewports": ["960x900", "390x844"],
+    "heldOutFinalViewport": "430x932",
+    "readiness": "HTML root data-ready=true and no page exception after each fresh navigation; no correctness value is a readiness predicate",
+    "runner": "runner/browser_checks.mjs writes evidence/results.json and screenshots; results.json includes runner SHA-256, source hashes, visual criterion bits, selection, and final checks",
+    "feedbackProbe": "probes/feedback_boundary.mjs uses book-authored recording stubs on matched D2 and D3 PNG bytes; no upstream service call; saved output evidence/feedback_boundary.json",
+    "sourceBoundProbe": "probes/source_bound_metrics.py requires exact pinned file SHA-256 values, executes compute_acc.py on book-created cases, and executes isolated Design2Code distance and WebGen-Agent estimator function bodies with small inputs; not full pipelines; saved output evidence/source_bound_metrics.json"
+  },
+  "papers": [
+    {"key": "kimiK3", "revision": "arXiv:2607.24653v2", "url": "https://arxiv.org/abs/2607.24653v2", "anchors": ["2.4 visual observation loop", "4.2.7 web development"]},
+    {"key": "webGenAgentPaper", "revision": "arXiv:2509.22644v1; ICLR 2026 conference version also listed by OpenReview", "url": "https://arxiv.org/html/2509.22644v1", "anchors": ["2.1 iterative generation", "2.2 Step-GRPO", "3.1 training description", "3.2 Table 3"]},
+    {"key": "webGenBenchPaper", "revision": "NeurIPS 2025 Datasets and Benchmarks", "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/6841eed8bb6a2ec49e49235c8115efee-Abstract-Datasets_and_Benchmarks_Track.html", "anchors": ["647 test cases", "operation-level GUI evaluation"]},
+    {"key": "design2CodePaper", "revision": "NAACL 2025", "url": "https://aclanthology.org/2025.naacl-long.199/", "anchors": ["484 webpages", "screenshot-to-code visual evaluation"]}
+  ],
+  "repositories": [
+    {
+      "key": "webGenAgentCode", "repository": "mnluzimu/WebGen-Agent", "commit": "3e3fad05e99ca523bb45aea19427c99be27b5f80", "url": "https://github.com/mnluzimu/WebGen-Agent/tree/3e3fad05e99ca523bb45aea19427c99be27b5f80", "license": "No third-party code redistributed in this module; licensing of the full upstream tree was not used as a premise.",
+      "inspected": ["src/agent/webgen_agent.py: step, get_feedback, choose_best_node", "src/utils/execute_for_feedback.py: execute_for_feedback captures the running page", "src/utils/get_screenshot_description.py: get_screenshot_description sends image bytes to the visual critic", "WebGen-RL/src/runs/run_qwen2_5-coder-7b-instruct_step-grpo.sh: reward manager, estimator, masking, five epochs", "WebGen-RL/verl/trainer/main_ppo.py: webgen reward dispatch", "WebGen-RL/verl/workers/reward_manager/webgen.py: WebGenRewardManager", "WebGen-RL/verl/trainer/ppo/ray_trainer.py: step_grpo dispatch", "WebGen-RL/verl/trainer/ppo/core_algos.py: compute_step_level_grpo_advantage, compute_policy_loss, agg_loss", "WebGen-RL/verl/workers/agentic/webgen_agent/feedback/execute_for_feedback.py: get_feedback_single valid-format build-failure branch", "WebGen-RL/verl/workers/agentic/webgen_agent/generation.py: execute_predictions, step positions, info_mask", "WebGen-RL/verl/workers/agentic/webgen_agent/webgenact.py: _create_loss_mask", "WebGen-RL/verl/workers/actor/dp_actor.py: update_policy masked actor loss", "WebGen-RL/verl/utils/torch_functional.py: masked_mean empty-mask behavior"]
+    },
+    {
+      "key": "webGenBenchCode", "repository": "mnluzimu/WebGen-Bench", "commit": "c89e0743438e458d617cebaf7a682e0e66e41049", "url": "https://github.com/mnluzimu/WebGen-Bench/tree/c89e0743438e458d617cebaf7a682e0e66e41049", "license": "No upstream code or test data redistributed.",
+      "inspected": ["src/ui_test_bolt/ui_eval_with_answer.py: create_tasks_test pairs task and expected_result", "src/ui_test_bolt/compute_acc.py: test.jsonl ui_instruct count, last assistant judgment, YES=1, PARTIAL=0.5, all cases in denominator"]
+    },
+    {
+      "key": "design2CodeCode", "repository": "jiahuigeng/Design2Code", "commit": "6fa270a9809ca13d0ec7a7c0d2c2fb35a48b04b0", "url": "https://github.com/jiahuigeng/Design2Code/tree/6fa270a9809ca13d0ec7a7c0d2c2fb35a48b04b0", "license": "CODE_LICENSE and DATA_LICENSE are distinct; no upstream code or benchmark data redistributed.",
+      "nameResolution": "Original plan named NoviScl/Design2Code; the current book bibliography and paper-linked pinned code target is jiahuigeng/Design2Code. This record retains that exact current target rather than treating the names as identical.",
+      "inspected": ["Design2Code/metrics/screenshot_single.py: Chromium full-page screenshot, disabled animation, blank fallback on exception", "Design2Code/metrics/multi_processing_eval.py: visual_eval_v3_multi dispatch and per-example aggregation", "Design2Code/metrics/visual_score.py: OCR-free blocks, text matching, calculate_distance_max_1d position subformula, area, CIEDE2000 color and CLIP similarity; final mean of five components"]
+    }
+  ]
+}

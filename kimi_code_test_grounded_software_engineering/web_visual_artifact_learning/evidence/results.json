@@ -1,0 +1,1104 @@
+{
+  "evidenceClass": "Executed controlled teaching fixture; no K3 model episode",
+  "browser": "Google Chrome 153.0.8010.53",
+  "node": "v24.7.0",
+  "environment": {
+    "deviceScaleFactor": 1,
+    "locale": "en-US",
+    "timezone": "UTC",
+    "viewport": {
+      "desktop": [
+        960,
+        900
+      ],
+      "narrow": [
+        390,
+        844
+      ],
+      "narrowFinal": [
+        430,
+        932
+      ]
+    },
+    "hideScrollbars": true,
+    "font": "Arial, Helvetica, sans-serif",
+    "network": "disabled by local file fixture"
+  },
+  "runnerSha256": "72314e48cfb0adc03dbd4ccab237bd28e614d5a6797c39317367bc628df05079",
+  "sourceHashes": {
+    "reference": {
+      "candidate": "a3064755eb51ca882c6c8eb1637dc159b20a9ad1ae41d09533dda154bac4297e",
+      "app": "60284bbed43cab9224dc97ae3467c9c360f969a553f432ba81888d4611e2994a",
+      "style": "279a7a7a1c3b301ec5eae96df2f6d9033b1a884153f7537904c25989361345ec"
+    },
+    "D0": {
+      "candidate": "646c679f6c9a181b269346b97b088f62f6373f2959e29116b3330e6d08daa55a",
+      "app": "26376c5f16d1142cba184d626be1dec7bd7ff6d85c9de7da77c07f0226e1a8e7",
+      "style": "279a7a7a1c3b301ec5eae96df2f6d9033b1a884153f7537904c25989361345ec"
+    },
+    "D1": {
+      "candidate": "8dc19db501850cc8be8286fff218efea7eb5f42c783d66aa90390a25719fdbc7",
+      "app": "26376c5f16d1142cba184d626be1dec7bd7ff6d85c9de7da77c07f0226e1a8e7",
+      "style": "279a7a7a1c3b301ec5eae96df2f6d9033b1a884153f7537904c25989361345ec"
+    },
+    "D2": {
+      "candidate": "9fcfaca2a5e7872f766fbdcbd088948fc856ce476b53d4a7e2af12d3ad5f5f98",
+      "app": "26376c5f16d1142cba184d626be1dec7bd7ff6d85c9de7da77c07f0226e1a8e7",
+      "style": "279a7a7a1c3b301ec5eae96df2f6d9033b1a884153f7537904c25989361345ec"
+    },
+    "D3": {
+      "candidate": "0ddd2e73ac378c6a7a3a9103db2247b57c787cf1f691cbf1eda625aa8e6c6222",
+      "app": "26376c5f16d1142cba184d626be1dec7bd7ff6d85c9de7da77c07f0226e1a8e7",
+      "style": "279a7a7a1c3b301ec5eae96df2f6d9033b1a884153f7537904c25989361345ec"
+    },
+    "D4": {
+      "candidate": "e0e2d2b2140ec93be119a8870ddf4a970cda89f720cb4a27db083fb88d887134",
+      "app": "26376c5f16d1142cba184d626be1dec7bd7ff6d85c9de7da77c07f0226e1a8e7",
+      "style": "279a7a7a1c3b301ec5eae96df2f6d9033b1a884153f7537904c25989361345ec"
+    }
+  },
+  "capturedScreenshots": [
+    {
+      "file": "reference-desktop-default.png",
+      "sha256": "6e7733aca1b5ceec6968cbfdcc4d5e75956ae306d7ff2dd9f1b715cd8df1fe92"
+    },
+    {
+      "file": "D0-desktop-default.png",
+      "sha256": "c4d3ae731c5c40c79a6e3c3e02e2349f4f5d26d5ab0aba87460a667b25988101"
+    },
+    {
+      "file": "D0-A-3-8.png",
+      "sha256": "66e998eab5f9820803fb512d06b4695831a974da5e5d08a3893dba5d80f7d922"
+    },
+    {
+      "file": "D1-narrow-A-3-8.png",
+      "sha256": "f8811b08d14b3c03c637fff7e2c7d1e990ab4ed62340cb40a786a6105008b65f"
+    },
+    {
+      "file": "D2-desktop-default.png",
+      "sha256": "ba23c243eba5999dd444dbd79e6dd497938d63722e6149f955dcacb43b11d39e"
+    },
+    {
+      "file": "D3-desktop-default.png",
+      "sha256": "6e7733aca1b5ceec6968cbfdcc4d5e75956ae306d7ff2dd9f1b715cd8df1fe92"
+    },
+    {
+      "file": "D3-A-3-8.png",
+      "sha256": "dd168d61b42de3a2b77dda9faeefb611236215d4a8f1458925e626ede71d289b"
+    },
+    {
+      "file": "D3-narrow-A-3-8.png",
+      "sha256": "654dbe39102cd2ce0d17a5ada2d34bde7f61dadd4f746394a6312cc1c736b168"
+    },
+    {
+      "file": "D4-desktop-default.png",
+      "sha256": "1adea3d3f137bba6129bec4e0bb73abfb8d8fceb523a706623fb25726c87efb1"
+    },
+    {
+      "file": "D4-narrow-A-3-8.png",
+      "sha256": "9e43901591af37a6ddccd2246b2c2f0489f467d34145649d2b5b44f317162d32"
+    },
+    {
+      "file": "metric-baseline.png",
+      "sha256": "6e7733aca1b5ceec6968cbfdcc4d5e75956ae306d7ff2dd9f1b715cd8df1fe92"
+    },
+    {
+      "file": "metric-layout.png",
+      "sha256": "768f729f06c8d552dfdb21b45b8d5ba4e9601bf7e5b4528c0e9672695c53fa8f"
+    },
+    {
+      "file": "metric-capture.png",
+      "sha256": "8fbb9f01d4c55f12a6f07957c9b4a0404ba94c70a7f5489d81de335d0bc834ab"
+    }
+  ],
+  "runs": [
+    {
+      "name": "reference",
+      "W1": true,
+      "W2": true,
+      "W3": true,
+      "W4data": true,
+      "W4summary": true,
+      "W5": true,
+      "W6": true,
+      "W7": true,
+      "W8": true,
+      "f": 1,
+      "v": 1,
+      "score": 1,
+      "eligible": true,
+      "visualCriteria": {
+        "elements": true,
+        "legible": true,
+        "layout": true,
+        "usable": true
+      },
+      "observed": {
+        "A": {
+          "ids": [
+            "A2",
+            "A3"
+          ],
+          "bars": [
+            "A2",
+            "A3"
+          ],
+          "count": "2",
+          "mean": "6",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 3–8"
+        },
+        "B": {
+          "ids": [
+            "B2"
+          ],
+          "bars": [
+            "B2"
+          ],
+          "count": "1",
+          "mean": "3",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group B · 3–8"
+        },
+        "boundary": {
+          "ids": [
+            "A1",
+            "A2"
+          ],
+          "bars": [
+            "A1",
+            "A2"
+          ],
+          "count": "2",
+          "mean": "3",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 2–4"
+        },
+        "empty": {
+          "ids": [],
+          "bars": [],
+          "count": "0",
+          "mean": "—",
+          "emptyChart": true,
+          "emptyTable": true,
+          "chartHidden": true,
+          "selection": "Group A · 9–10"
+        },
+        "exportA": [
+          [
+            "A2",
+            "A",
+            4
+          ],
+          [
+            "A3",
+            "A",
+            8
+          ]
+        ],
+        "exportB": [
+          [
+            "B2",
+            "B",
+            3
+          ]
+        ],
+        "desktop": {
+          "required": true,
+          "legend": true,
+          "controls": true,
+          "results": true,
+          "noOverflow": true,
+          "columns": 2,
+          "readable": true,
+          "font": "Arial, Helvetica, sans-serif",
+          "fontsReady": true,
+          "pointerFocus": true
+        },
+        "narrow": [
+          {
+            "required": true,
+            "legend": true,
+            "controls": true,
+            "results": true,
+            "noOverflow": true,
+            "columns": 1,
+            "readable": true,
+            "font": "Arial, Helvetica, sans-serif",
+            "fontsReady": true,
+            "pointerFocus": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "D0",
+      "W1": true,
+      "W2": false,
+      "W3": false,
+      "W4data": false,
+      "W4summary": false,
+      "W5": false,
+      "W6": false,
+      "W7": true,
+      "W8": false,
+      "f": 0,
+      "v": 0.75,
+      "score": 0.15000000000000002,
+      "eligible": false,
+      "visualCriteria": {
+        "elements": true,
+        "legible": false,
+        "layout": true,
+        "usable": true
+      },
+      "observed": {
+        "A": {
+          "ids": [
+            "A1",
+            "A2",
+            "A3",
+            "B1",
+            "B2",
+            "B3"
+          ],
+          "bars": [
+            "A1",
+            "A2",
+            "A3",
+            "B1",
+            "B2",
+            "B3"
+          ],
+          "count": "6",
+          "mean": "4.5",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 3–8"
+        },
+        "B": {
+          "ids": [
+            "A1",
+            "A2",
+            "A3",
+            "B1",
+            "B2",
+            "B3"
+          ],
+          "bars": [
+            "A1",
+            "A2",
+            "A3",
+            "B1",
+            "B2",
+            "B3"
+          ],
+          "count": "6",
+          "mean": "4.5",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group B · 3–8"
+        },
+        "boundary": {
+          "ids": [
+            "A1",
+            "A2",
+            "A3",
+            "B1",
+            "B2",
+            "B3"
+          ],
+          "bars": [
+            "A1",
+            "A2",
+            "A3",
+            "B1",
+            "B2",
+            "B3"
+          ],
+          "count": "6",
+          "mean": "4.5",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 2–4"
+        },
+        "empty": {
+          "ids": [
+            "A1",
+            "A2",
+            "A3",
+            "B1",
+            "B2",
+            "B3"
+          ],
+          "bars": [
+            "A1",
+            "A2",
+            "A3",
+            "B1",
+            "B2",
+            "B3"
+          ],
+          "count": "6",
+          "mean": "4.5",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 9–10"
+        },
+        "exportA": [
+          [
+            "A1",
+            "A",
+            2
+          ],
+          [
+            "A2",
+            "A",
+            4
+          ],
+          [
+            "A3",
+            "A",
+            8
+          ],
+          [
+            "B1",
+            "B",
+            1
+          ],
+          [
+            "B2",
+            "B",
+            3
+          ],
+          [
+            "B3",
+            "B",
+            9
+          ]
+        ],
+        "exportB": [
+          [
+            "A1",
+            "A",
+            2
+          ],
+          [
+            "A2",
+            "A",
+            4
+          ],
+          [
+            "A3",
+            "A",
+            8
+          ],
+          [
+            "B1",
+            "B",
+            1
+          ],
+          [
+            "B2",
+            "B",
+            3
+          ],
+          [
+            "B3",
+            "B",
+            9
+          ]
+        ],
+        "desktop": {
+          "required": true,
+          "legend": true,
+          "controls": true,
+          "results": true,
+          "noOverflow": true,
+          "columns": 2,
+          "readable": true,
+          "font": "Arial, Helvetica, sans-serif",
+          "fontsReady": true,
+          "pointerFocus": true
+        },
+        "narrow": [
+          {
+            "required": false,
+            "legend": false,
+            "controls": true,
+            "results": false,
+            "noOverflow": true,
+            "columns": 1,
+            "readable": true,
+            "font": "Arial, Helvetica, sans-serif",
+            "fontsReady": true,
+            "pointerFocus": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "D1",
+      "W1": true,
+      "W2": true,
+      "W3": true,
+      "W4data": true,
+      "W4summary": true,
+      "W5": false,
+      "W6": true,
+      "W7": true,
+      "W8": false,
+      "f": 0.8333333333333334,
+      "v": 0.75,
+      "score": 0.8166666666666668,
+      "eligible": false,
+      "visualCriteria": {
+        "elements": true,
+        "legible": false,
+        "layout": true,
+        "usable": true
+      },
+      "observed": {
+        "A": {
+          "ids": [
+            "A2",
+            "A3"
+          ],
+          "bars": [
+            "A2",
+            "A3"
+          ],
+          "count": "2",
+          "mean": "6",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 3–8"
+        },
+        "B": {
+          "ids": [
+            "B2"
+          ],
+          "bars": [
+            "B2"
+          ],
+          "count": "1",
+          "mean": "3",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group B · 3–8"
+        },
+        "boundary": {
+          "ids": [
+            "A1",
+            "A2"
+          ],
+          "bars": [
+            "A1",
+            "A2"
+          ],
+          "count": "2",
+          "mean": "3",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 2–4"
+        },
+        "empty": {
+          "ids": [],
+          "bars": [],
+          "count": "0",
+          "mean": "—",
+          "emptyChart": true,
+          "emptyTable": true,
+          "chartHidden": true,
+          "selection": "Group A · 9–10"
+        },
+        "exportA": [
+          [
+            "A1",
+            "A",
+            2
+          ],
+          [
+            "A2",
+            "A",
+            4
+          ],
+          [
+            "A3",
+            "A",
+            8
+          ],
+          [
+            "B1",
+            "B",
+            1
+          ],
+          [
+            "B2",
+            "B",
+            3
+          ],
+          [
+            "B3",
+            "B",
+            9
+          ]
+        ],
+        "exportB": [
+          [
+            "A1",
+            "A",
+            2
+          ],
+          [
+            "A2",
+            "A",
+            4
+          ],
+          [
+            "A3",
+            "A",
+            8
+          ],
+          [
+            "B1",
+            "B",
+            1
+          ],
+          [
+            "B2",
+            "B",
+            3
+          ],
+          [
+            "B3",
+            "B",
+            9
+          ]
+        ],
+        "desktop": {
+          "required": true,
+          "legend": true,
+          "controls": true,
+          "results": true,
+          "noOverflow": true,
+          "columns": 2,
+          "readable": true,
+          "font": "Arial, Helvetica, sans-serif",
+          "fontsReady": true,
+          "pointerFocus": true
+        },
+        "narrow": [
+          {
+            "required": false,
+            "legend": false,
+            "controls": true,
+            "results": false,
+            "noOverflow": true,
+            "columns": 1,
+            "readable": true,
+            "font": "Arial, Helvetica, sans-serif",
+            "fontsReady": true,
+            "pointerFocus": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "D2",
+      "W1": true,
+      "W2": true,
+      "W3": true,
+      "W4data": true,
+      "W4summary": true,
+      "W5": true,
+      "W6": true,
+      "W7": false,
+      "W8": false,
+      "f": 1,
+      "v": 0.75,
+      "score": 0.9500000000000001,
+      "eligible": false,
+      "visualCriteria": {
+        "elements": false,
+        "legible": true,
+        "layout": true,
+        "usable": true
+      },
+      "observed": {
+        "A": {
+          "ids": [
+            "A2",
+            "A3"
+          ],
+          "bars": [
+            "A2",
+            "A3"
+          ],
+          "count": "2",
+          "mean": "6",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 3–8"
+        },
+        "B": {
+          "ids": [
+            "B2"
+          ],
+          "bars": [
+            "B2"
+          ],
+          "count": "1",
+          "mean": "3",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group B · 3–8"
+        },
+        "boundary": {
+          "ids": [
+            "A1",
+            "A2"
+          ],
+          "bars": [
+            "A1",
+            "A2"
+          ],
+          "count": "2",
+          "mean": "3",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 2–4"
+        },
+        "empty": {
+          "ids": [],
+          "bars": [],
+          "count": "0",
+          "mean": "—",
+          "emptyChart": true,
+          "emptyTable": true,
+          "chartHidden": true,
+          "selection": "Group A · 9–10"
+        },
+        "exportA": [
+          [
+            "A2",
+            "A",
+            4
+          ],
+          [
+            "A3",
+            "A",
+            8
+          ]
+        ],
+        "exportB": [
+          [
+            "B2",
+            "B",
+            3
+          ]
+        ],
+        "desktop": {
+          "required": false,
+          "legend": false,
+          "controls": true,
+          "results": true,
+          "noOverflow": true,
+          "columns": 2,
+          "readable": true,
+          "font": "Arial, Helvetica, sans-serif",
+          "fontsReady": true,
+          "pointerFocus": true
+        },
+        "narrow": [
+          {
+            "required": false,
+            "legend": false,
+            "controls": true,
+            "results": true,
+            "noOverflow": true,
+            "columns": 1,
+            "readable": true,
+            "font": "Arial, Helvetica, sans-serif",
+            "fontsReady": true,
+            "pointerFocus": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "D3",
+      "W1": true,
+      "W2": true,
+      "W3": true,
+      "W4data": true,
+      "W4summary": true,
+      "W5": true,
+      "W6": true,
+      "W7": true,
+      "W8": true,
+      "f": 1,
+      "v": 1,
+      "score": 1,
+      "eligible": true,
+      "visualCriteria": {
+        "elements": true,
+        "legible": true,
+        "layout": true,
+        "usable": true
+      },
+      "observed": {
+        "A": {
+          "ids": [
+            "A2",
+            "A3"
+          ],
+          "bars": [
+            "A2",
+            "A3"
+          ],
+          "count": "2",
+          "mean": "6",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 3–8"
+        },
+        "B": {
+          "ids": [
+            "B2"
+          ],
+          "bars": [
+            "B2"
+          ],
+          "count": "1",
+          "mean": "3",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group B · 3–8"
+        },
+        "boundary": {
+          "ids": [
+            "A1",
+            "A2"
+          ],
+          "bars": [
+            "A1",
+            "A2"
+          ],
+          "count": "2",
+          "mean": "3",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 2–4"
+        },
+        "empty": {
+          "ids": [],
+          "bars": [],
+          "count": "0",
+          "mean": "—",
+          "emptyChart": true,
+          "emptyTable": true,
+          "chartHidden": true,
+          "selection": "Group A · 9–10"
+        },
+        "exportA": [
+          [
+            "A2",
+            "A",
+            4
+          ],
+          [
+            "A3",
+            "A",
+            8
+          ]
+        ],
+        "exportB": [
+          [
+            "B2",
+            "B",
+            3
+          ]
+        ],
+        "desktop": {
+          "required": true,
+          "legend": true,
+          "controls": true,
+          "results": true,
+          "noOverflow": true,
+          "columns": 2,
+          "readable": true,
+          "font": "Arial, Helvetica, sans-serif",
+          "fontsReady": true,
+          "pointerFocus": true
+        },
+        "narrow": [
+          {
+            "required": true,
+            "legend": true,
+            "controls": true,
+            "results": true,
+            "noOverflow": true,
+            "columns": 1,
+            "readable": true,
+            "font": "Arial, Helvetica, sans-serif",
+            "fontsReady": true,
+            "pointerFocus": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "D4",
+      "W1": true,
+      "W2": true,
+      "W3": true,
+      "W4data": true,
+      "W4summary": true,
+      "W5": true,
+      "W6": true,
+      "W7": false,
+      "W8": false,
+      "f": 1,
+      "v": 0.75,
+      "score": 0.9500000000000001,
+      "eligible": false,
+      "visualCriteria": {
+        "elements": true,
+        "legible": true,
+        "layout": true,
+        "usable": false
+      },
+      "observed": {
+        "A": {
+          "ids": [
+            "A2",
+            "A3"
+          ],
+          "bars": [
+            "A2",
+            "A3"
+          ],
+          "count": "2",
+          "mean": "6",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 3–8"
+        },
+        "B": {
+          "ids": [
+            "B2"
+          ],
+          "bars": [
+            "B2"
+          ],
+          "count": "1",
+          "mean": "3",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group B · 3–8"
+        },
+        "boundary": {
+          "ids": [
+            "A1",
+            "A2"
+          ],
+          "bars": [
+            "A1",
+            "A2"
+          ],
+          "count": "2",
+          "mean": "3",
+          "emptyChart": false,
+          "emptyTable": false,
+          "chartHidden": false,
+          "selection": "Group A · 2–4"
+        },
+        "empty": {
+          "ids": [],
+          "bars": [],
+          "count": "0",
+          "mean": "—",
+          "emptyChart": true,
+          "emptyTable": true,
+          "chartHidden": true,
+          "selection": "Group A · 9–10"
+        },
+        "exportA": [
+          [
+            "A2",
+            "A",
+            4
+          ],
+          [
+            "A3",
+            "A",
+            8
+          ]
+        ],
+        "exportB": [
+          [
+            "B2",
+            "B",
+            3
+          ]
+        ],
+        "desktop": {
+          "required": true,
+          "legend": true,
+          "controls": false,
+          "results": true,
+          "noOverflow": true,
+          "columns": 2,
+          "readable": true,
+          "font": "Arial, Helvetica, sans-serif",
+          "fontsReady": true,
+          "pointerFocus": false
+        },
+        "narrow": [
+          {
+            "required": true,
+            "legend": true,
+            "controls": false,
+            "results": true,
+            "noOverflow": true,
+            "columns": 1,
+            "readable": true,
+            "font": "Arial, Helvetica, sans-serif",
+            "fontsReady": true,
+            "pointerFocus": false
+          }
+        ]
+      }
+    }
+  ],
+  "selection": {
+    "rule": "Among W1-W8 eligible candidates, highest 0.8f+0.2v; earliest D number breaks ties",
+    "selected": "D3",
+    "last": "D4",
+    "lastEligible": false
+  },
+  "final": {
+    "passed": true,
+    "first": {
+      "ids": [
+        "A2",
+        "A3"
+      ],
+      "bars": [
+        "A2",
+        "A3"
+      ],
+      "count": "2",
+      "mean": "6",
+      "emptyChart": false,
+      "emptyTable": false,
+      "chartHidden": false,
+      "selection": "Group A · 3–8"
+    },
+    "second": {
+      "ids": [
+        "B1",
+        "B2"
+      ],
+      "bars": [
+        "B1",
+        "B2"
+      ],
+      "count": "2",
+      "mean": "2",
+      "emptyChart": false,
+      "emptyTable": false,
+      "chartHidden": false,
+      "selection": "Group B · 1–3"
+    },
+    "export": [
+      [
+        "B1",
+        "B",
+        1
+      ],
+      [
+        "B2",
+        "B",
+        3
+      ]
+    ],
+    "narrow": {
+      "required": true,
+      "legend": true,
+      "controls": true,
+      "results": true,
+      "noOverflow": true,
+      "columns": 1,
+      "readable": true,
+      "font": "Arial, Helvetica, sans-serif",
+      "fontsReady": true,
+      "pointerFocus": true
+    }
+  },
+  "metricControl": {
+    "source": "D3",
+    "filter": "default",
+    "block": "chart-title",
+    "boxSource": "DOM geometry normalized by viewport, not Design2Code OCR",
+    "layoutIntervention": "append #chart-title{transform:translateX(48px)} to a disposable style copy",
+    "baseline": {
+      "viewport": [
+        960,
+        900
+      ],
+      "box": {
+        "x": 0.4294514973958333,
+        "y": 0.38722222222222225,
+        "width": 0.20681966145833333,
+        "height": 0.023333333333333334
+      }
+    },
+    "layout": {
+      "viewport": [
+        960,
+        900
+      ],
+      "box": {
+        "x": 0.4794514973958333,
+        "y": 0.38722222222222225,
+        "width": 0.20681966145833333,
+        "height": 0.023333333333333334
+      }
+    },
+    "capture": {
+      "viewport": [
+        390,
+        844
+      ],
+      "box": {
+        "x": 0.3365985576923077,
+        "y": 0.8370112559241706,
+        "width": 0.5090945512820513,
+        "height": 0.024881516587677725
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "studio-ops-001",
+  "state_version": 21,
+  "root_image": "studio-root.png",
+  "root_observation": "i0",
+  "root_dimensions": [160, 160],
+  "red_box_xywh": [20, 20, 40, 40],
+  "blue_box_xywh": [20, 80, 40, 40],
+  "crop_xywh": [10, 20, 60, 120],
+  "crop_xyxy": [10, 20, 70, 140],
+  "crop_observation": "i1",
+  "crop_image": "studio-crop.png",
+  "viewport_dimensions": [300, 600],
+  "distractor_image": "studio-distractor-crop.png",
+  "protected_truth": "blue below red",
+  "policy_filename": "opaque-i1.png",
+  "purpose": "Deterministic pixels for identity and order checks; no model result."
+}

@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "provenance": {
+    "record_id": "CHAPTER_04_KDA_REFERENCE_CHECKS",
+    "evidence_class": "reproduced",
+    "claim_boundary": "These deterministic CPU checks support the scaled-down recurrence, state boundaries, affine chunk semantics, numerical ledger, and analytical costs only. They do not reproduce model training, a GPU kernel, or production performance.",
+    "original_record_sha256": "3d2f3d165b2c25499971fcfba8894dd5fa5585899f79f3a6dd9954da28843f21"
+  },
+  "results": {
+    "RESULT_KDA_CAUSALITY": {
+      "last_compared_position": 6,
+      "max_abs_prefix_error": 0.0,
+      "status": "pass"
+    },
+    "RESULT_KDA_CHUNK_SIZE_INVARIANCE": {
+      "final_state_exact_by_chunk": {
+        "1": true,
+        "10": true,
+        "12": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "6": true
+      },
+      "max_abs_output_error_by_chunk": {
+        "1": 0.0,
+        "10": 0.0,
+        "12": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "6": 0.0
+      },
+      "status": "pass"
+    },
+    "RESULT_KDA_COST_LEDGER": {
+      "exercise_bf16_bytes": 4194304,
+      "exercise_bf16_mib": 4.0,
+      "exercise_logical_state_elements": 2097152,
+      "formal_crossover_tokens": "496",
+      "reported_formulas_equal_at_crossover": true,
+      "status": "pass",
+      "toy_logical_state_elements": 8
+    },
+    "RESULT_KDA_GRADIENT_EQUIVALENCE": {
+      "coordinates": 16,
+      "finite_difference_step": 1e-06,
+      "max_abs_gradient_error": 0.0,
+      "status": "pass"
+    },
+    "RESULT_KDA_MULTI_STEP_TRACE": {
+      "decode_outputs_exact": [
+        [
+          "57801/131072",
+          "94545/2097152"
+        ],
+        [
+          "-184797/1048576",
+          "12771/32768"
+        ]
+      ],
+      "decode_states_exact": [
+        [
+          [
+            "2488147/16777216",
+            "1273945/2097152"
+          ],
+          [
+            "57801/131072",
+            "94545/2097152"
+          ]
+        ],
+        [
+          [
+            "-184797/1048576",
+            "12771/32768"
+          ],
+          [
+            "2749913/4194304",
+            "6057689/33554432"
+          ]
+        ]
+      ],
+      "final_prefill_states_exact": [
+        [
+          [
+            "-568719/2097152",
+            "75123/262144"
+          ],
+          [
+            "19267/32768",
+            "31515/524288"
+          ]
+        ],
+        [
+          [
+            "-184797/524288",
+            "12771/16384"
+          ],
+          [
+            "217587/524288",
+            "-776973/4194304"
+          ]
+        ]
+      ],
+      "final_prefill_states_float": [
+        [
+          [
+            -0.271186,
+            0.286572
+          ],
+          [
+            0.587982,
+            0.06011
+          ]
+        ],
+        [
+          [
+            -0.352472,
+            0.77948
+          ],
+          [
+            0.415014,
+            -0.185245
+          ]
+        ]
+      ],
+      "heads": 2,
+      "positions": 10,
+      "status": "pass"
+    },
+    "RESULT_KDA_NUMERICAL_STRESS": {
+      "bf16_max_finite": 3.3895313892515355e+38,
+      "bound_is_within_bf16_range": true,
+      "k3_tile_log_decay_lower_bound": -80,
+      "max_abs_exact_vs_float_output_error": 1.1102230246251565e-16,
+      "reciprocal_rescaling_upper_bound": 5.54062238439351e+34,
+      "status": "pass"
+    },
+    "RESULT_KDA_ONE_STEP_ORACLE": {
+      "correction": [
+        [
+          "3/4",
+          "-1"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "error": [
+        "3/2",
+        "-2"
+      ],
+      "output": [
+        "27/20",
+        "4/5"
+      ],
+      "prediction": [
+        "1/2",
+        "1"
+      ],
+      "retained": [
+        [
+          "1/2",
+          "1"
+        ],
+        [
+          "3/4",
+          "1"
+        ]
+      ],
+      "state": [
+        [
+          "5/4",
+          "0"
+        ],
+        [
+          "3/4",
+          "1"
+        ]
+      ],
+      "status": "pass"
+    },
+    "RESULT_KDA_PARTIAL_TAIL": {
+      "chunk_sizes": [
+        4,
+        4,
+        2
+      ],
+      "final_state_exact": true,
+      "real_tail_positions": 2,
+      "status": "pass"
+    },
+    "RESULT_KDA_RECURRENT_CHUNK_EQUIVALENCE": {
+      "chunk_sizes": [
+        4,
+        4,
+        2
+      ],
+      "final_state_exact": true,
+      "max_abs_output_error": 0.0,
+      "status": "pass"
+    },
+    "RESULT_KDA_SEQUENCE_ISOLATION": {
+      "altered_request_max_abs_difference": 2.5321289062500005,
+      "first_request_max_abs_error": 0.0,
+      "status": "pass"
+    }
+  }
+}
