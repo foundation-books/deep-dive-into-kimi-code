@@ -34,6 +34,12 @@ The KDA and MoBA calculations use the existing [KDA](../kda/README.md) and
 [MoBA](../moba/README.md) reference implementations. Their small inputs and
 outputs establish toy correctness and accounting only.
 
+The MoBA archive replay compares final forward coordinates within `1e-12` and
+requires forward and finite-difference error metrics to stay within their
+original `1e-12` and `1e-8` bounds. These floating diagnostics can differ across
+supported Python versions. Shapes, routes, accounting, statuses, and all other
+recorded fields still require exact matches. The supplied archive is unchanged.
+
 The Gated MLA command analyzes supplied observations from one H200. It
 reconstructs materialized attention and outputs from the actual recorded
 inputs, compares them with recorded compact-path outputs under the frozen

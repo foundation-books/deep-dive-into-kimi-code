@@ -5,6 +5,7 @@ from __future__ import annotations
 from collections.abc import Iterable
 from hashlib import sha256
 import json
+import math
 from pathlib import Path
 from typing import Any
 
@@ -49,17 +50,63 @@ def exact_vector(vector: Iterable[object]) -> list[str]:
     return [str(value) for value in vector]
 
 
+def _float_field_matches(
+    observed: Any, expected: Any, tolerance: float, *, error_metric: bool
+) -> bool:
+    if isinstance(expected, list):
+        return (
+            isinstance(observed, list)
+            and len(observed) == len(expected)
+            and all(
+                _float_field_matches(left, right, tolerance, error_metric=error_metric)
+                for left, right in zip(observed, expected, strict=True)
+            )
+        )
+    if not isinstance(expected, float) or type(observed) not in (int, float):
+        return False
+    if not math.isfinite(observed):
+        return False
+    if error_metric:
+        return 0.0 <= observed <= tolerance
+    return math.isclose(observed, expected, rel_tol=0.0, abs_tol=tolerance)
+
+
+def _result_matches(name: str, key: str, observed: Any, expected: Any) -> bool:
+    # Only the two floating MoBA oracles permit reduction-rounding differences.
+    fields: dict[str, tuple[float, bool]]
+    if name == "moba" and key == "RESULT_MOBA_FORWARD_ORACLE":
+        fields = {"max_abs_error": (1e-12, True), "final_query_outputs": (1e-12, False)}
+    elif name == "moba" and key == "RESULT_MOBA_BACKWARD_ORACLE":
+        fields = {"max_abs_error": (1e-8, True), "q_k_v_max_abs_errors": (1e-8, True)}
+    else:
+        return observed == expected
+    if not isinstance(observed, dict) or not isinstance(expected, dict):
+        return False
+    comparable = dict(observed)
+    for field, (tolerance, error_metric) in fields.items():
+        if field not in observed or field not in expected:
+            return False
+        if not _float_field_matches(
+            observed[field], expected[field], tolerance, error_metric=error_metric
+        ):
+            return False
+        comparable[field] = expected[field]
+    return comparable == expected
+
+
 def check_reference(name: str, observed: dict[str, Any]) -> dict[str, Any]:
-    """Compare all computed fields with the selected archived toy results."""
+    """Compare archived fields, allowing only the documented MoBA float bounds."""
     packet = load_data(name)
     expected = packet["results"]
     actual = json_value(observed)
-    if actual != expected:
-        differences = [
-            key
-            for key in set(actual) | set(expected)
-            if actual.get(key) != expected.get(key)
-        ]
+    differences = [
+        key
+        for key in set(actual) | set(expected)
+        if key not in actual
+        or key not in expected
+        or not _result_matches(name, key, actual[key], expected[key])
+    ]
+    if differences:
         raise ValueError(f"{name}: result differs: {', '.join(sorted(differences))}")
     if any(row["status"] != "pass" for row in actual.values()):
         raise ValueError(f"{name}: a correctness check failed")

@@ -32,6 +32,64 @@ class ReaderExperimentTests(unittest.TestCase):
             result["results"]["RESULT_MOBA_BACKWARD_ORACLE"]["max_abs_error"], 1e-8
         )
 
+    def test_moba_accepts_sequential_float_reductions(self) -> None:
+        def sequential_sum(values, start=0):
+            total = start
+            for value in values:
+                total += value
+            return total
+
+        with patch("builtins.sum", sequential_sum):
+            observed = moba.run_all_checks()
+        self.assertNotEqual(
+            _data.json_value(observed), _data.load_data("moba")["results"]
+        )
+        self.assertEqual(_data.check_reference("moba", observed)["checks"], 10)
+
+    def test_moba_changed_forward_coordinates_are_rejected(self) -> None:
+        observed = moba.run_all_checks()
+        outputs = _data.json_value(
+            observed["RESULT_MOBA_FORWARD_ORACLE"]["final_query_outputs"]
+        )
+        outputs[0][0] += 1e-6
+        observed["RESULT_MOBA_FORWARD_ORACLE"]["final_query_outputs"] = outputs
+        with self.assertRaisesRegex(ValueError, "RESULT_MOBA_FORWARD_ORACLE"):
+            _data.check_reference("moba", observed)
+
+    def test_moba_error_bounds_reject_invalid_diagnostics(self) -> None:
+        baseline = moba.run_all_checks()
+        invalid = [
+            ("RESULT_MOBA_FORWARD_ORACLE", "max_abs_error", 2e-12),
+            ("RESULT_MOBA_FORWARD_ORACLE", "max_abs_error", -1e-15),
+            ("RESULT_MOBA_FORWARD_ORACLE", "max_abs_error", float("nan")),
+            ("RESULT_MOBA_FORWARD_ORACLE", "max_abs_error", float("inf")),
+            ("RESULT_MOBA_BACKWARD_ORACLE", "max_abs_error", 2e-8),
+            ("RESULT_MOBA_BACKWARD_ORACLE", "q_k_v_max_abs_errors", [2e-8, 0.0, 0.0]),
+            ("RESULT_MOBA_BACKWARD_ORACLE", "q_k_v_max_abs_errors", [0.0, 0.0]),
+        ]
+        for key, field, value in invalid:
+            with self.subTest(key=key, field=field, value=value):
+                observed = deepcopy(baseline)
+                observed[key][field] = value
+                with self.assertRaisesRegex(ValueError, key):
+                    _data.check_reference("moba", observed)
+
+    def test_moba_other_fields_still_require_exact_matches(self) -> None:
+        baseline = moba.run_all_checks()
+        changes = [
+            ("RESULT_MOBA_FORWARD_ORACLE", "output_shape", [11, 2, 4]),
+            ("RESULT_MOBA_FORWARD_ORACLE", "tolerance", 1e-8),
+            ("RESULT_MOBA_FORWARD_ORACLE", "status", "fail"),
+            ("RESULT_MOBA_CAUSALITY", "max_abs_prefix_error", 1e-15),
+            ("RESULT_MOBA_ROUTE_CONSERVATION", "load_sum", 29),
+        ]
+        for key, field, value in changes:
+            with self.subTest(key=key, field=field):
+                observed = deepcopy(baseline)
+                observed[key][field] = value
+                with self.assertRaisesRegex(ValueError, key):
+                    _data.check_reference("moba", observed)
+
     def test_changed_oracle_output_is_rejected(self) -> None:
         results = kda.run_all_checks()
         results["RESULT_KDA_ONE_STEP_ORACLE"]["output"] = ["0", "0"]
